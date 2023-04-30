@@ -14,12 +14,12 @@ python train_belief.py \
        --eps 1.5e-05 \
        --grad_clip 5 \
        --hid_dim 512 \
-       --burn_in_frames 10000 \
-       --replay_buffer_size 100000 \
-       --epoch_len 1000 \
+       --burn_in_frames 1000 \
+       --replay_buffer_size 10000 \
+       --epoch_len 100 \
        --num_epoch 500 \
        --train_device cuda:0 \
-       --act_device cuda:1 \
+       --act_device cuda:0 \
        --explore 1 \
        --policy exps/iql/model0.pthw \
        --seed 2254257 \

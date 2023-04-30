@@ -97,7 +97,7 @@ def parse_args():
     # actor setting
     parser.add_argument("--act_base_eps", type=float, default=0.1)
     parser.add_argument("--act_eps_alpha", type=float, default=7)
-    parser.add_argument("--act_device", type=str, default="cuda:1")
+    parser.add_argument("--act_device", type=str, default="cuda:0")
     parser.add_argument("--actor_sync_freq", type=int, default=10)
 
     args = parser.parse_args()
